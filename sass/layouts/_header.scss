@@ -1,0 +1,53 @@
+.header {
+  width: 100%;
+  min-height: 8rem; /*1rem = 16px 8 * 16px = 128px*/
+  position: relative;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  @media only screen and (min-width: 1825px) {
+    background-color: rgba(#63b7e8, 0.2);
+    margin-bottom: 5rem;
+    box-shadow: 3px 3px 7px 10px rgba($color-black, 0.2);
+  }
+
+  &__logo {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    z-index: 10;
+    transform: translate(-50%, -50%);
+
+    @media only screen and (max-width: 768px) {
+      left: 15%;
+    }
+
+    @media only screen and (max-width: 480px) {
+      left: 23%;
+    }
+
+    @media only screen and (max-width: 375px) {
+      left: 30%;
+    }
+
+    @media only screen and (min-width: 1825px) {
+      left: 15%;
+    }
+  }
+
+  &__social-nav {
+    position: absolute;
+    right: 10%;
+    top: 1%;
+
+    @media only screen and (max-width: 768px) {
+      right: 1%;
+    }
+
+    @media only screen and (min-width: 1825px) {
+      right: 15%;
+    }
+  }
+}

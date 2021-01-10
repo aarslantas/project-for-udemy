@@ -1,0 +1,55 @@
+.container-contactus {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactus {
+  height: 40rem;
+  width: 80%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  @media only screen and (max-width: 480px) {
+    height: 68rem;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  @media only screen and (max-width: 375px) {
+    padding: 0;
+  }
+
+  @media only screen and (min-width: 1825px) {
+    width: 70%;
+  }
+
+  &__left {
+    flex: 0 60%;
+
+    @media only screen and (max-width: 480px) {
+      flex: 0 50%;
+      width: 100%;
+      margin-top: 2rem;
+    }
+  }
+  &__right {
+    height: 60%;
+    background-color: rgba($color-black, 0.7);
+
+    flex: 1;
+
+    @media only screen and (max-width: 480px) {
+      flex: 0 40%;
+      width: 100%;
+    }
+  }
+}

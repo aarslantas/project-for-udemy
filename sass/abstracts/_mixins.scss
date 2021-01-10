@@ -1,0 +1,50 @@
+@mixin input {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.1rem;
+  width: 80%;
+  padding: 0.8rem 1rem;
+  border: none;
+  border: 1px solid $color-primary;
+
+  transition: all 0.1s;
+
+  &:focus {
+    outline: none;
+    border: 2px solid $color-primary;
+  }
+
+  @content;
+}
+
+/*
+mobile portrait -   (0 - 375px)
+mobile landscape -   (376px - 480px)
+tablet portrait -   (481px - 768px)
+tablet landscape & laptop -   (769px - 1024px)
+desktop   (1025px - 1200px)
+large screen (1825px - )
+*/
+
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == m-portrait {
+    @media only screen and (max-width: 375px) {
+      @content;
+    }
+  } @else if $breakpoint == m-landscape {
+    @media only screen and (max-width: 480px) {
+      @content;
+    }
+  } @else if $breakpoint == t-portrait {
+    @media only screen and (max-width: 768px) {
+      @content;
+    }
+  } @else if $breakpoint == t-landscape {
+    @media only screen and (max-width: 1024px) {
+      @content;
+    }
+  } @else if $breakpoint == l-screen {
+    @media only screen and (min-width: 1825) {
+      @content;
+    }
+  }
+}

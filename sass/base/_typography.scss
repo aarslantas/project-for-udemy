@@ -1,0 +1,52 @@
+.t1 {
+  font-family: $font-secondary;
+  color: $color-secondary;
+  font-size: 2.3rem;
+  font-weight: 800;
+  line-height: 1.3;
+
+  span {
+    display: block;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    font-size: 2rem;
+  }
+  @media only screen and (max-width: 768px) {
+    font-size: 1.6rem;
+  }
+}
+.t2 {
+  font-family: $font-secondary;
+  color: $color-secondary;
+  font-size: 2rem;
+
+  &--green {
+    color: $color-primary;
+  }
+
+  &--white {
+    color: $color-white;
+    text-shadow: 2px 2px rgba($color-black, 0.4);
+  }
+
+  @media only screen and (max-width: 1024px) {
+    font-size: 1.8rem;
+  }
+  @media only screen and (max-width: 480px) {
+    font-size: 1.5rem;
+  }
+}
+.t3 {
+  font-size: 1.2rem;
+  color: $color-secondary;
+}
+.t4 {
+  font-size: 1.1rem;
+}
+.s1 {
+  font-size: 0.9rem;
+  color: #909090;
+}
+.s2 {
+}

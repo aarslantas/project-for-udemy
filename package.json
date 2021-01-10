@@ -1,0 +1,20 @@
+{
+  "name": "mercansoft",
+  "version": "1.0.0",
+  "description": "mercansoft web sayfası",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "keywords": [
+    "yazılım",
+    "software",
+    "website"
+  ],
+  "author": "abdurrahman arslantas",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  },
+  "dependencies": {}
+}
